@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fernando Daniel Castillo Barrón - 6IM7"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/negacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Negación"
+        android:onClick="negacion"/>
+
+    <Button
+        android:id="@+id/enfasis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Énfasis"
+        android:layout_alignBaseline="@+id/negacion"
+        android:layout_alignBottom="@+id/negacion"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:onClick="enfasis"/>
+
+    <Button
+        android:id="@+id/sacudida"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:text="Sacudida"
+        android:layout_alignBaseline="@+id/negacion"
+        android:layout_alignBottom="@+id/negacion"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="sacudida"/>
+    </RelativeLayout>
